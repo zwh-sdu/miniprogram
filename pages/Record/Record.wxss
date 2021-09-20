@@ -1,0 +1,55 @@
+/* pages/cin/cin.wxss */
+.table{
+  border:lpx solid #cccccc;
+  widows: 100%;
+}
+.tr{
+  widows: 100%;
+  display:flex;
+  justify-content: space-between;
+}
+.th{
+  font-weight: 900;
+  background:#5900ff;
+  font-size: 14px;
+  color:#cccccc;
+}
+.th,.td{
+padding:10px;
+width:100%;
+text-align:center;
+border-bottom:1px solid rgb(8, 5, 5);
+}
+.search{  
+  width: 80%;  
+}  
+.search_arr {  
+  border: 1px solid #d0d0d0;  
+  border-radius: 10rpx;  
+  margin-left: 20rpx;  
+}  
+.search_arr input{  
+  margin-left: 60rpx;  
+  height: 60rpx;  
+  border-radius: 5px;  
+}  
+.bc_text {  
+  line-height: 68rpx;  
+  height: 68rpx;  
+  margin-top: 34rpx;  
+}  
+
+.icon{
+  width: 75rpx;
+  height: 75rpx;
+  top: 0rpx;
+  right: 0rpx;
+  margin-bottom: 0rpx;
+  position:relative;
+}
+
+.container {
+  padding: 0;
+  align-items: left;
+  padding-left: 15rpx;
+}

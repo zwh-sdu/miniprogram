@@ -1,0 +1,40 @@
+<view class="container">
+  <form catchsubmit="formSubmit" catchreset="formReset"> 
+
+
+<view class="intro">请在测试机器人前登记相关信息</view>
+
+
+<view class="view-contain-ti">
+    <text class="text-ti">机器人序列号</text>
+    <input class="input1" type="text" bindinput="expInput4" value="{{result}}"></input>
+    <image class="icon" src="../../images/sao.jpeg" bindtap="getScancode"></image>
+</view>  
+
+
+
+<view class="view-contain-ti">
+    <text class="text-ti">位置序列号</text>
+    <input class="input1" type="text" bindinput='expInput' ></input>
+</view>
+
+
+<view class="view-contain-ti">
+    <text class="text-ti">测试时长(单位:小时)</text>
+    <input class="input1"  type="text"bindinput='expInput2' ></input>
+</view>
+
+
+
+<view class="view-contain-ti">
+    <text class="text-ti">登记人员姓名</text>
+    <input class="input1"  type="text" bindinput='expInput3' ></input>
+</view>
+
+<view class="btn-area">
+     <button class="intro" type="primary" formType="submit" 
+     bindtap="runningsubmit">提交
+     </button>
+</view>
+  </form>
+</view>

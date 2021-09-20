@@ -1,0 +1,43 @@
+ .bord {
+   margin: 10px;
+   line-height: 20mm;
+
+   border-style: solid;
+   border-width: 5px;
+   border-radius: 10px;
+ }
+
+ .bord-r {
+   border-color: red;
+ }
+ .bord-y {
+  border-color: #f0ec08;
+}
+.bord-g {
+  border-color: green;
+}
+
+.bot {
+  border-top-color: black;
+  border-top-style: solid;
+  border-top-width: 2px;
+
+  width: 33.3%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size:18px;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.bot-l {
+  margin-left: 0%;
+}
+.bot-m {
+  margin-left: 33.3%;
+}
+.bot-r {
+  margin-left: 66.6%;
+}

@@ -1,0 +1,28 @@
+<view class="container">
+ 
+ <form bindsubmit="getInputValue">
+    <input type='text'  name='robotnumber' confirm-type="search" placeholder="输入要查询的机器人编号" value="{{result}}"></input>
+    <button class="search" bindtap="getScancode" >扫一扫</button>
+    <button class="search" form-type="submit" bindtap="collect" >搜索</button>
+  </form>
+ <!-- <image class="icon" src="../../images/sao.jpeg" bindtap="getScancode"></image> -->
+  
+  <view class="table">
+   <view class="tr">
+     <view class="th">机器人编号</view>
+     <view class="th">日期时间</view>
+     <view class="th">操作人</view>
+     <view class="th">操作</view>
+    </view>
+    <block wx:for="{{record}}" wx:for-item="Records">
+   <view wx:if="{{Records.robotnumber==content}}">
+      <view class="tr">    
+          <view class="td">{{Records.robotnumber}}</view>
+          <view class="td">{{Records.Time}}</view>
+          <view class="td">{{Records.operator}}</view>
+          <view class="td">{{Records.operation}}</view>
+      </view>
+    </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,32 @@
+<view>
+  <block wx:for="{{wrong}}" wx:key="{[robotnumber]}">
+    <view class="bord bord-r">
+      <text decode="{{true}}">编号：{{item.robotnumber}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      <text style="color:red">状态：{{item.state}}</text>
+    </view>
+  </block>
+
+  <block wx:for="{{over}}" wx:key="{[robotnumber]}">
+    <view class="bord bord-g">
+      <text decode="{{true}}">编号：{{item.robotnumber}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      <text style="color:green">状态：{{item.state}}</text>
+    </view>
+  </block>
+
+  <block wx:for="{{run}}" wx:key="{[robotnumber]}">
+    <view class="bord bord-y">
+      <text decode="{{true}}">编号：{{item.robotnumber}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      <text style="color:#f0ec08">状态：{{item.state}}</text>
+    </view>
+  </block>
+</view>
+
+<view>
+  <text>{{enter}}</text>
+</view>
+
+<view>
+  <test class="bot bot-l" style="color:red">故障：{{wrongnum}}</test>
+  <test class="bot bot-m" style="color:#f0ec08">运行：{{runnum}}</test>
+  <test class="bot bot-r" style="color:green">完成：{{overnum}}</test>
+</view>

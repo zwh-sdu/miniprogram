@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/pic/pic",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/Record/Record",
+    "pages/Overview/Overview",
+    "pages/Running/Running" 
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "新时达机器人登记系统",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
